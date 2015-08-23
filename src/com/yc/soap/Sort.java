@@ -26,5 +26,16 @@ public abstract class Sort {
                 System.out.print(a[i] + ", ");
             }
         }
+        // 输出后加个换行
+        System.out.println();
+    }
+
+    public boolean isSorted(Comparable[] a) {
+        for (int i = 1; i < a.length; i++) {
+            if (less(a, i, i - 1)) {
+                return false;
+            }
+        }
+        return true;
     }
 }

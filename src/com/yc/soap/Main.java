@@ -8,5 +8,6 @@ public class Main {
         Sort shellSort = new ShellSort();
         shellSort.sort(a);
         shellSort.printArray(a);
+        System.out.println("Array a is sorted: " + shellSort.isSorted(a));
     }
 }
