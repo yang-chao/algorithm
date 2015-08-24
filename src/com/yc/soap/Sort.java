@@ -6,6 +6,8 @@ package com.yc.soap;
  */
 public abstract class Sort {
 
+    private long time;
+
     public abstract void sort(Comparable[] a);
 
     protected boolean less(Comparable[] a, int i, int j) {
@@ -16,6 +18,10 @@ public abstract class Sort {
         Comparable t = a[i];
         a[i] = a[j];
         a[j] = t;
+    }
+
+    public long calTime() {
+        return time;
     }
 
     public void printArray(Comparable[] a) {
