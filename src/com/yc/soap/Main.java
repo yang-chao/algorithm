@@ -18,7 +18,11 @@ public class Main {
 //        ((InsertionSort) sort).guardInsertionSort(a);
 //        sort.printArray(a);
 
-        Sort sort = new SelectionSort();
+        // Sort sort = new SelectionSort();
+        // sort.sort(a);
+        // sort.printArray(a);
+
+        MergeSort sort = new MergeSort();
         sort.sort(a);
         sort.printArray(a);
     }
