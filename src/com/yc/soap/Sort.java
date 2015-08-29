@@ -14,6 +14,14 @@ public abstract class Sort {
         return a[i].compareTo(a[j]) < 0;
     }
 
+    protected boolean less(Comparable a, Comparable b) {
+        return a.compareTo(b) < 0;
+    }
+
+    protected boolean lessOrEqual(Comparable a, Comparable b) {
+        return a.compareTo(b) <= 0;
+    }
+
     protected void exch(Comparable[] a, int i, int j) {
         Comparable t = a[i];
         a[i] = a[j];
