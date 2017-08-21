@@ -1,4 +1,6 @@
-package com.yc.soap;
+package com.yc.soap.sort;
+
+import com.yc.soap.sort.Sort;
 
 public class ShellSort extends Sort {
 

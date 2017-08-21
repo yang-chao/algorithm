@@ -1,4 +1,4 @@
-package com.yc.soap;
+package com.yc.soap.sort;
 
 public class MergeSort extends Sort {
 
