@@ -1,9 +1,13 @@
 # 算法练习
 
-## Android知识整理
+### Android知识整理
 
-### 腾讯OMG
+#### 腾讯OMG
 * synchronize用法
+  * http://www.cnblogs.com/paddix/p/5367116.html
+  * http://blog.csdn.net/jsqfengbao/article/details/44837281
+* ReenTrantLock
+  * http://www.cnblogs.com/easycloud/p/3726464.html
 * volatile用法
 * 动态权限适配方案，权限组的概念
 * 网络请求缓存处理，okhttp如何处理网络缓存的
@@ -19,7 +23,7 @@
   - http://www.jianshu.com/p/7158568e4867
 
 
-### 美团
+#### 美团
 * 线程挂起，休眠，释放资源相关，唤醒，线程同步，数据传递
   * http://blog.csdn.net/zhandoushi1982/article/details/5506597
   * https://www.zhihu.com/question/39440766/answer/89210950
@@ -44,7 +48,7 @@
 * view渲染
 
 
-### 滴滴
+#### 滴滴
 * MVP
 * 广播（动态注册和静态注册区别，有序广播和标准广播）
   * http://www.jianshu.com/p/0b3a7b35d76d
@@ -70,10 +74,14 @@
   * https://zhuanlan.zhihu.com/p/25592934
 * 是否熟悉Android jni开发，jni如何调用java层代码
 * 进程间通信的方式
+  * http://www.jianshu.com/p/838c6a95eaad
+  * http://gityuan.com/2015/11/01/binder-driver/
   * http://www.jianshu.com/p/fc0ac15342eb
   * http://blog.csdn.net/boyupeng/article/details/47011383
   * http://wangkuiwu.github.io/2014/09/01/Binder-Introduce/
   * http://www.jianshu.com/p/4ee3fd07da14
+* binder问答
+  * http://www.bijishequ.com/detail/266914?p=
 * java注解
 * 计算一个view的嵌套层级
 * 项目组件化的理解
@@ -90,10 +98,15 @@
 * EventBus实现原理
 
 
-### 今日头条
+#### 今日头条
+* Parcelable和Serializable
+  * https://www.zhihu.com/question/34306952
+  * http://blog.csdn.net/androidzhaoxiaogang/article/details/8172539
+  * https://github.com/android-cn/android-discuss/issues/142
 * 快速排序
 * JSON字符串解析算法及优化
-* 线程同步的问题，常用的线程同步
+* 线程同步的问题，常用的线程同步。Lock与synchronized区别,Join用法
+  * join http://blog.csdn.net/cyp331203/article/details/40824499
 * 问项目，根据项目引申：主要有Asynctask和线程池，多进程以及IPC，GC相关（四种引用，怎么判断哪些内存该GC，GC算法），why，when，how 这些都是要从项目里面举出来例子
   * http://blog.csdn.net/mazhimazh/article/details/19752475
 * 图片加载三级缓存，有一个功能，做一个能放大缩小的图片查看器，加载一张巨大的图片，怎么做
@@ -111,14 +124,15 @@
 * 数据库性能优化
   * https://zhuanlan.zhihu.com/p/25447017
 * APP启动流程
-  * http://www.weyye.me/detail/android-source-activity-oncreate/
+  * http://gityuan.com/2016/03/12/start-activity/
+  * https://www.kancloud.cn/digest/androidframeworks/127782
   * http://www.jianshu.com/p/910df9643d8c
 * ManiFest原理
 * APK打包流程
   * http://blog.csdn.net/jason0539/article/details/44917745
 
 
-### 知乎/猎豹
+#### 知乎/猎豹
 * Activity的四种启动模式以及相关概念，Activity栈，常见情境下的生命周期分析，异常关闭页面之后的恢复
 * Service基础概念，生命周期，通信。四大组件是基础，常见问题都要掌握
 * IPC
@@ -140,7 +154,7 @@
 * DexClassLoader和PathClassLoader的区别
 
 
-### 小米
+#### 小米
 * 求一个字符串的最长回文
 * 给定一个数，以及有序数组，求出来数组里面两个数的和等于给定数的下标
 * 二叉树中序遍历，深度优先广度优先，不用递归算法的方法
@@ -154,7 +168,7 @@
 * 讲解一下HandlerThread
 
 
-### 网易
+#### 网易
 * 求笛卡尔积
 * 单词反转
 * 两个有序数组，时间复杂度最好的情况下，合并成一个数组
@@ -166,7 +180,11 @@
 * 热修复/插件化
 
 
-### 阿里巴巴
+#### 京东
+* 进程和线程的区别
+  *
+
+#### 阿里巴巴
 * LRUCache原理
 * 图片加载原理
 * 模块化实现（好处，原因）
@@ -175,6 +193,7 @@
 * 统计启动时长,标准
 * 如何保持应用的稳定性
 * ThreadLocal 原理
+  * http://toughcoder.net/blog/2016/11/14/understanding-java-threadlocal/
 * 谈谈classloader
 * 动态布局
 * 热修复,插件化

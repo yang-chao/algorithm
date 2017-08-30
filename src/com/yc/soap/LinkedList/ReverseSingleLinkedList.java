@@ -14,7 +14,9 @@ public class ReverseSingleLinkedList {
 
         print(head);
         System.out.println();
-        print(reverse(head));
+//        print(reverse(head));
+        System.out.println();
+        print(reverse1(head));
     }
 
     static class ListNode {
@@ -43,6 +45,17 @@ public class ReverseSingleLinkedList {
             preNode = node;
             node = nextNode;
         }
+        return reverseHead;
+    }
+
+    private static ListNode reverse1(ListNode current) {
+        if (current == null || current.next == null) {
+            return current;
+        }
+        ListNode nextNode = current.next;
+        current.next = null;
+        ListNode reverseHead = reverse1(nextNode);
+        nextNode.next = current;
         return reverseHead;
     }
 
