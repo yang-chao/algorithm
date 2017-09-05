@@ -115,7 +115,7 @@ public class Traversal {
         while (!stack.isEmpty()) {
             node = stack.peek();
             if ((node.left == null && node.right == null) ||
-                    (pre != null && ((pre == node.left && node.right == null) || pre == node.right))) {
+                    ((pre != null) && ((pre == node.left && node.right == null) || pre == node.right))) {
                 System.out.print(node.value + ",");
                 stack.pop();
                 pre = node;
@@ -143,8 +143,8 @@ public class Traversal {
             }
             node = stack.pop();
             if (node.flag == 1) {
-                node.flag++;
                 stack.push(node);
+                node.flag++;
                 node = node.right;
             } else if (node.flag == 2) {
                 System.out.print(node.value + ",");

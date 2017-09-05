@@ -5,8 +5,9 @@ package com.yc.soap.sort;
  */
 public class QuickSort {
     public static void main(String[] args) {
-        int[] array = {5, 7, 1, 3, 10, 9, 8, 2, 4, 6};
-        quickSort(array, 0, array.length - 1);
+        int[] array = {5, 7, 1, 3, 10, 9, 8, 2, 4, 6, -1, 0};
+//        int[] array = {4,2,4,1,4,2};
+        quickSort1(array, 0, array.length - 1);
         for (int a :
                 array) {
             System.out.print(a);
@@ -28,14 +29,45 @@ public class QuickSort {
             while (low < high && array[high] >= pivot) {
                 high--;
             }
-            array[low] = array[high];
+            if (low < high) {
+                array[low] = array[high];
+            }
 
             while (low < high && array[low] <= pivot) {
                 low++;
             }
-            array[high] = array[low];
+            if (low < high) {
+                array[high] = array[low];
+            }
         }
         array[low] = pivot;
         return low;
+    }
+
+    private static void quickSort1(int[] array, int low, int high) {
+        int start = low;
+        int end = high;
+        if (low < high) {
+            int pivot = array[low];
+            while (low < high) {
+                while (low < high && array[high] >= pivot) {
+                    high--;
+                }
+                if (low < high) {
+                    array[low] = array[high];
+                }
+
+                while (low < high && array[low] <= pivot) {
+                    low++;
+                }
+                if (low < high) {
+                    array[high] = array[low];
+                }
+            }
+            array[low] = pivot;
+
+            quickSort(array, start, low - 1);
+            quickSort(array, low + 1, end);
+        }
     }
 }

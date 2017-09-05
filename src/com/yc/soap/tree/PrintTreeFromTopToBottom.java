@@ -1,6 +1,7 @@
 package com.yc.soap.tree;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -40,7 +41,8 @@ public class PrintTreeFromTopToBottom {
         if (root == null) {
             return;
         }
-        Queue<TreeNode> queue = new ArrayDeque<>();
+        LinkedList<TreeNode> queue = new LinkedList<>();
+//        Queue<TreeNode> queue = new ArrayDeque<>();
         queue.add(root);
         while (!queue.isEmpty()) {
             TreeNode node = queue.poll();

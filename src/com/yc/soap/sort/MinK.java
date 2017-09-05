@@ -6,7 +6,7 @@ package com.yc.soap.sort;
 public class MinK {
     public static void main(String[] args) {
         int[] array = {1,5,3,10,9,8,4,7,2,6};
-        findMinK(array, 5, 0, array.length - 1);
+        findMinK(array, 3, 0, array.length - 1);
     }
 
     private static void findMinK(int[] array, int k, int low, int high) {
@@ -35,12 +35,16 @@ public class MinK {
             while (low < high && array[high] >= pivot) {
                 high--;
             }
-            array[low] = array[high];
+            if (low < high) {
+                array[low] = array[high];
+            }
 
             while (low < high && array[low] <= pivot) {
                 low++;
             }
-            array[high] = array[low];
+            if (low < high) {
+                array[high] = array[low];
+            }
         }
         array[low] = pivot;
         return low;

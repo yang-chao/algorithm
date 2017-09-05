@@ -21,6 +21,11 @@ public class ReBuildBinaryTree {
         int value;
         TreeNode left;
         TreeNode right;
+
+        @Override
+        public int hashCode() {
+            return super.hashCode();
+        }
     }
 
     private static TreeNode reBuildTree(int[] preOrder, int preStart, int preEnd, int[] midOrder, int midStart, int midEnd) {
