@@ -67,7 +67,7 @@
 * 网络请求相关，主要是网络请求优化。网络请求的时候遇到的问题。
 
 ## Android
-#### UI
+### UI
 * 图片加载库相关，bitmap如何处理大图，如一张30M的大图，如何预防OOM
 * ListView图片加载错乱的原理和解决方案
 * down、move、up事件的传递
@@ -79,7 +79,7 @@
 * Activity和Window，View的关系，以及DecorView结构
 * SurfView相关
 
-#### 四大组件
+### 四大组件
 * Activity栈
   * http://blog.csdn.net/janice0529/article/details/40905285
 * 广播（动态注册和静态注册区别，有序广播和标准广播）
@@ -93,13 +93,13 @@
   * https://www.zhihu.com/question/41352677/answer/91030381
 * BroadcastReceiver，LocalBroadcastReceiver 区别
 
-#### 安全
+### 安全
 * 动态权限适配方案，权限组的概念
 * RecyclerView优点，原理
   * https://dev.qq.com/topic/5811d3e3ab10c62013697408
 * Android系统为什么会设计ContentProvider，进程共享和线程安全问题
 
-#### 进程和线程
+### 进程和线程
 * Handler发消息给子线程，looper怎么启动
 * 多线程断点续传原理
   * http://blog.csdn.net/ljw124213/article/details/51570565
@@ -126,7 +126,7 @@
   * http://www.jianshu.com/p/910df9643d8c
 * 进程和 Application 的生命周期
 
-#### 其它
+### 其它
 * LRUCache实现
 * SP是进程同步的吗?有什么方法做到同步
 * 设计模式中的基本原则
@@ -147,7 +147,7 @@
 * App是如何沙箱化，为什么要这么做
 * 什么是内存泄露，如何分析？MAT和LeakCanary。MAT和LeakCanary的各自优缺点是什么？
 
-#### Android新技术和第三方组件
+### Android新技术和第三方组件
 * EventBus原理
   * http://blog.csdn.net/crazy__chen/article/details/47425779
 * 项目组件化的理解
